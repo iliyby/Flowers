@@ -4,170 +4,224 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stile.css">
     <title>Flowers</title>
 </head>
-<body>
-    <header class="header">
-        <main>
-            <h1>Аккаунт</h1>
-            Личный кабинет
-                    								
-            <span class="close bluroff" onclick="$('.userprofile').fadeOut(300); return false;"></span>
+<bady>
+    
+        <header id="header">
+            <main>
+                <div id="menutext">
+                <h1>Цветы Минска</h1>
+                Режим работы с 8:00 до 21:00   
+            </main>
         </div>
-        <div class="modalscroll">
-            <div id="ajaxlogin">
-                <div id="slog">
-                    <div class="message_error" style="display:none"></div>
-                    <form method="post" class="login_form">
-                        <ul class="export">
-                            <li>
-                                <label>Ваш e-mail</label>
-                                <input id="login_email" class="on1" type="text" name="email" required placeholder="" value="" maxlength="255"/>
-                            </li>
-                            <li>
-                                <label>
-                                    Пароль 
-                                    <a href="/пользователь/напомнить_пароль">Забыли?</a>
-                                </label>
-                                <input id="login_password" class="on2" type="password" placeholder="" required name="password" value=""/>
-                            </li>
-                            <li>
-                                <button id="check_login" type="submit" name="login" value="" class="but loginclick">Авторизоваться</button>
-                                <a href="/пользователь/регистрация" class="modalreglink">Регистрация</a>
-                            </li>
-                        </ul>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-</div>
-<div class="modalitem testorder">
-<div class="modalclose"></div>
-<div class="modal">
-    <div>
-        <div class="modaltitle">
 
-        </main>
-    <P>
-        Продажа цветов, составление букетов
-    </P>
-    </header>
-    <a href="https://myfin.by/currency/minsk">Курсы валют на сегодня</a>
-
-    <section>
-    <img src="картиинки/pig.jpg" width="700" height="400" alt="ping"/>
-    </section>
-    <h2>Список цветов</h2>
-    <Ol>
-        <li><a href=roz.html>Роза</a></li>
-        <li><a href=hriza.html>Хризантема</a>а</li>
-        <li><a href=gvoz.html>Гвоздика</a>а</li>
-    </Ol>
-   
-    <footer>
-<nav>
-        <ul>
-    <li>Контакты</li>
-    <li>О нас</li>
-    <li>Мы в социиальный сетях</li>
-</ul>
-</nav>    
-</footer>
-</form>
-<input class="onemail" type="email" name="email" value="" placeholder="E-mail" required/>
-</span>
-</div>
-<div class="mtbut">
-<button class="btnmail but" type="submit" name="callback" value="">Подписаться</button>
-</div>
-</div>
-</form>
-<div class='sendonecloic'>
-<b>Спасибо за подписку!</b>
-
-Теперь вы будете всегда в курсе новостей и акций магазина цветов
-</div>
-</div>
-</div>
-</li>
-</ul>
-</div>
-<div class="zecontact">
-    <b>
-        <a class="tel_phone" href="tel:+375298627229">+375 (29)862-72-29</a>
-    </b>
-    <b>
-        <a class="tel_phone" href="tel:+375291300906">+375 (29) 130-09-06</a>
-    </b>
-    <b>
-        <a class="tel_phone" href="tel:+375445821751">+375 (44) 582-17-51</a>
-    </b>
-    <div></div>
-    <span class="fotcall bluron" onclick="$('.cback').fadeIn(300); return false;">Заказать звонок</span>
-</div>
-</div>
-<div class="company-info"></div>
-<div class="company-info">
-<p>
-ИП Лойко И.В УНП 193105522
-    <br/>
-    Заказать звонок
-                    				
-    <span class="close bluroff" onclick="$('.cback').fadeOut(300); return false;"></span>
-</div>
-<div class="modalscroll">
-    <form method="POST" id="feedback-form">
-        <ul class="export">
-            <li>
-                <label>Имя</label>
-                <input type="text" name="nameFF" required placeholder="">
-            </li>
-            <li>
-                <label>Телефон (мобильный)</label>
-                <input id="phone" type="text" name="phoneFF" required placeholder="">
-            </li>
-            <li>
-                <button type="submit" class="but" value="">Отправить</button>
-            </li>
-        </ul>
-    </form>
-</div>
-</div>
-</div>
-</div>
-<div class="modalitem vopros">
-<div class="modalclose"></div>
-<div class="modal">
-<div>
-<div class="modaltitle">
-    Возникли вопросы?
-                    				
-    <span class="close bluroff" onclick="$('.vopros').fadeOut(300); return false;"></span>
-</div>
-<div class="modalscroll">
-    <form method="POST" id="vopros-form">
-        <ul class="export">
-            <li>
-                <label>
-                    Имя 
-                    <span>*</span>
-                </label>
-                <input type="text" name="nameFF" required="" placeholder="">
-            </li>
-            <li>
-                <label>
-                    Телефон (мобильный) 
-                    <span>*</span>
-                </label>
-                <input id="phone2" type="text" name="phoneFF" required="" placeholder="">
-            </li>
-            <li>
-                <label>E-mail</label>
-                <input type="text" name="mailFF" placeholder="">
-            </li>
             
+<!--registrasion-->
+            <div class="nomer">
+<ul >
+    <li>
+        <label>Ваш e-mail</label>
+            <input class="on1" type="text" name="email" required placeholder="" value="" maxlength="255"/>
+                    </li>
+                        <li>
+                            <label>
+                                     Пароль 
+                                      <a href="/пользователь/напомнить_пароль">Забыли?</a>
+                                        </label>
+                                          <input   type="password" placeholder="" required name="password" value=""/>
+                                            </li>
+                                              <li>
+                                               <button  type="submit" name="login" value="">Авторизоваться</button>
+                                                 <a href="/пользователь/регистрация">Регистрация</a>
+                                                  </li>
+                                                   </ul>
+                                                     </div>
+<div id="text"
+        <P >
+Ваши близкие достойны только самого лучшего!
+Поэтому мы готовы предложить вам свежие цветы отличного качества от лучших европейских и южноамериканских производителей,
+так как наша компания является прямым импортером в РБ.
+Наша команда – это союз творческих людей, которые любят свое дело и индивидуально подходят к каждому покупателю. 
+Профессиональные флористы бережно собирают букеты и композиции к любому поводу, любой цветовой гамме, различные по составу и бюджету. 
+У нас гибкая ценовая политика. Если вам понравился букет, но вы не укладываетесь в запланированный бюджет,
+можно изменить состав или размер букета под ваши нужды. А ваш особенный букет будет оперативно доставлен в нужное время. 
+Мы любим свое дело и создаем каждый букет с уважением и любовью к нашим клиентам!
+        </P>
+    </div>
+        </header>
+        
+        <div >
+        <a href="https://myfin.by/currency/minsk">Курсы валют на сегодня</a>
+    
+        <section>
+        <img src="картиинки/pig.jpg" width="700" height="400" alt="ping"/>
+        </section>
+        <h2>Список цветов</h2>
+        <Ol>
+            <li><a href=roz.html>Роза</a></li>
+            <li><a href=hriza.html>Хризантема</a>а</li>
+            <li><a href=gvoz.html>Гвоздика</a>а</li>
+        </Ol>
+       </div>
+        <footer>
+    <nav>
+            <ul>
+        <li>Контакты</li>
+        <li>О нас</li>
+        <li>Мы в социиальный сетях</li>
+    </ul>
+    </nav>    
+    </footer>
+    </form>
+    <input class="onemail" type="email" name="email" value="" placeholder="E-mail" required/>
+    </span>
+    </div>
+    <div class="mtbut">
+    <button class="btnmail but" type="submit" name="callback" value="">Подписаться</button>
+    </div>
+    </div>
+    </form>
+    <div class='sendonecloic'>
+    <b>Спасибо за подписку!</b>
+    
+    Теперь вы будете всегда в курсе новостей и акций магазина цветов
+    </div>
+    </div>
+    </div>
+    </li>
+    </ul>
+    </div>
+    <div class="zecontact">
+        <b>
+            <a class="tel_phone" href="tel:+375298627229">+375 (29)862-72-29</a>
+        </b>
+        <b>
+            <a class="tel_phone" href="tel:+375291300906">+375 (29) 130-09-06</a>
+        </b>
+        <b>
+            <a class="tel_phone" href="tel:+375445821751">+375 (44) 582-17-51</a>
+        </b>
+        <div></div>
+        <span class="fotcall bluron" onclick="$('.cback').fadeIn(300); return false;">Заказать звонок</span>
+    </div>
+    </div>
+    <div class="company-info"></div>
+    <div class="company-info">
+    <p>
+    ИП Лойко И.В УНП 193105522
+        <br/>
+        Заказать звонок
+                                        
+        <span class="close bluroff" onclick="$('.cback').fadeOut(300); return false;"></span>
+    </div>
+    <div class="modalscroll">
+        <form method="POST" id="feedback-form">
+            <ul class="export">
+                <li>
+                    <label>Имя</label>
+                    <input type="text" name="nameFF" required placeholder="">
+                </li>
+                <li>
+                    <label>Телефон (мобильный)</label>
+                    <input id="phone" type="text" name="phoneFF" required placeholder="">
+                </li>
+                <li>
+                    <button type="submit" class="but" value="">Отправить</button>
+                </li>
+            </ul>
+        </form>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="modalitem vopros">
+    <div class="modalclose"></div>
+    <div class="modal">
+    <div>
+    <div class="modaltitle">
+        Возникли вопросы?
+                                        
+        <span class="close bluroff" onclick="$('.vopros').fadeOut(300); return false;"></span>
+    </div>
+    <div class="modalscroll">
+        <form method="POST" id="vopros-form">
+            <ul class="export">
+                <li>
+                    <label>
+                        Имя 
+                        <span>*</span>
+                    </label>
+                    <input type="text" name="nameFF" required="" placeholder="">
+                </li>
+                <li>
+                    <label>
+                        Телефон (мобильный) 
+                        <span>*</span>
+                    </label>
+                    <input id="phone2" type="text" name="phoneFF" required="" placeholder="">
+                </li>
+                <li>
+                    <label>E-mail</label>
+                    <input type="text" name="mailFF" placeholder="">
+                </li>
+    <style>
+        body {
+            background:#FFC0CB
+        }
+#wrapper {
+    width: 900 px;
+    margin: 0 auto;
+    background: #FFC0CB;
+}
+#header{
+    position: relative;
+    height: 250px;
+    background-color: aqua;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    box-shadow: rgba(0,0,0,0,5) 0px 1px px;
+}
+    img{
+        float: left;
+        margin:0 0 10px 40px;
+        color:black;
+    }
+    h1{
+        margin: 0 0 10px 40px;
+        color: blue;
+    }
+    .nomer{
+        position:absolute;
+        top:5px;
+        left:1000px;
+        font-size: 15px;
+        font-style: italic;
+        font-weight:bold;
+        color:beige;
+    }
+    #sidebar{
+        background-color: aliceblue;
+        width: 180px;
+        padding: 10px;
 
-</bady>
+    }
+    .marcer{
+        float:left;
+        margin:5px 5px 0 0;
+    }
+    #content{
+        margin-bottom: 5px;
+        width: 676px;
+        width:676px;
+        padding: 10px;
+        background: #FFC0CB;
+        border-radius: 5px;
+        box-shadow: rgba(red, green, blue, alpha);
+    }
+  
+   </style>
+
+        </bady>
 </html>  
