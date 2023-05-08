@@ -7,13 +7,19 @@
     <link rel="stylesheet" href="stile.css">
     <title>Flowers</title>
 </head>
+
 <bady>
-    
-        <header id="header">
+    <header id="header">
+        <div class="cantainer header__container">
+            
+            
             <main>
+                <button class="header__burger-btn">
+                    <span></span><span></span><span></span>
+                </button>
                 <div id="menutext">
                 <h1>Цветы Минска</h1>
-                Режим работы с 8:00 до 21:00   
+                <h2>Режим работы с 8:00 до 21:00</h2>   
             </main>
         </div>
 
@@ -23,7 +29,7 @@
 <ul >
     <li>
         <label>Ваш e-mail</label>
-            <input class="on1" type="text" name="email" required placeholder="" value="" maxlength="255"/>
+            <input  type="text" name="email" required placeholder="" value="" maxlength="255"/>
                     </li>
                         <li>
                             <label>
@@ -38,8 +44,8 @@
                                                   </li>
                                                    </ul>
                                                      </div>
-<div id="text"
-        <P >
+<div id="text">
+        <P>
 Ваши близкие достойны только самого лучшего!
 Поэтому мы готовы предложить вам свежие цветы отличного качества от лучших европейских и южноамериканских производителей,
 так как наша компания является прямым импортером в РБ.
@@ -56,8 +62,14 @@
         <a href="https://myfin.by/currency/minsk">Курсы валют на сегодня</a>
     
         <section>
-        <img src="картиинки/pig.jpg" width="700" height="400" alt="ping"/>
+            <div id="img">
+        <img src="картиинки/pig.jpg" width="700" height="400" alt="ping">
         </section>
+        </div>
+       
+        </ul>
+        </nav>
+        <div class="sidebar">
         <h2>Список цветов</h2>
         <Ol>
             <li><a href=roz.html>Роза</a></li>
@@ -65,15 +77,9 @@
             <li><a href=gvoz.html>Гвоздика</a>а</li>
         </Ol>
        </div>
-        <footer>
-    <nav>
-            <ul>
-        <li>Контакты</li>
-        <li>О нас</li>
-        <li>Мы в социиальный сетях</li>
-    </ul>
-    </nav>    
-    </footer>
+        
+</div>    
+</footer>
     </form>
     <input class="onemail" type="email" name="email" value="" placeholder="E-mail" required/>
     </span>
@@ -114,40 +120,32 @@
         <br/>
         Заказать звонок
                                         
-        <span class="close bluroff" onclick="$('.cback').fadeOut(300); return false;"></span>
+        <span onclick="$('.cback').fadeOut(300); return false;"></span>
     </div>
-    <div class="modalscroll">
+    
         <form method="POST" id="feedback-form">
-            <ul class="export">
+            <ul >
                 <li>
                     <label>Имя</label>
                     <input type="text" name="nameFF" required placeholder="">
                 </li>
                 <li>
                     <label>Телефон (мобильный)</label>
-                    <input id="phone" type="text" name="phoneFF" required placeholder="">
+                    <input type="text" name="phoneFF" required placeholder="">
                 </li>
                 <li>
                     <button type="submit" class="but" value="">Отправить</button>
                 </li>
             </ul>
         </form>
-    </div>
-    </div>
-    </div>
-    </div>
-    <div class="modalitem vopros">
-    <div class="modalclose"></div>
-    <div class="modal">
-    <div>
-    <div class="modaltitle">
+    
         Возникли вопросы?
                                         
-        <span class="close bluroff" onclick="$('.vopros').fadeOut(300); return false;"></span>
+        <span  onclick="$('.vopros').fadeOut(300); return false;"></span>
     </div>
-    <div class="modalscroll">
+    
         <form method="POST" id="vopros-form">
-            <ul class="export">
+            <ul >
                 <li>
                     <label>
                         Имя 
@@ -160,68 +158,109 @@
                         Телефон (мобильный) 
                         <span>*</span>
                     </label>
-                    <input id="phone2" type="text" name="phoneFF" required="" placeholder="">
+                    <input type="text" name="phoneFF" required="" placeholder="">
                 </li>
                 <li>
                     <label>E-mail</label>
                     <input type="text" name="mailFF" placeholder="">
                 </li>
-    <style>
-        body {
-            background:#FFC0CB
-        }
-#wrapper {
-    width: 900 px;
-    margin: 0 auto;
-    background: #FFC0CB;
+                
+                <!--footer-->
+                <div class="footer">
+                <p class="fon"><strong>Телефоны:<bt>+375291300906</strong></p>
+                <p class="fan"><strong>viber:<bt>+375298627229</strong></p>
+                <p class="mail"><strong>E-mail:<bt>Wrestlingbby2019@mail.ru</strong></p>
+                
+                
+                
+                <style>
+                    body {
+                        background:#FFC0CB
+                    }
+            #wrapper {
+                width: 900 px;
+                margin: 0 auto;
+                background: #FFC0CB;
+            }
+            
+            #header{
+                position: relative;
+                height: 250px;
+                background-color: rgb(218, 132, 192);
+                margin-bottom: 5px;
+                border-radius: 5px;
+                box-shadow: rgba(0,0,0,0,5) 0px 1px px;
+            }
+                img{
+                    float: left;
+                    margin:0 0 10px 40px;
+                    color:black;
+                }
+                h1{
+                    margin: 0 0 10px 40px;
+                    color: blue;
+                }
+                .nomer{
+                    position:absolute;
+                    top:5px;
+                    left:1000px;
+                    font-size: 15px;
+                    font-style: italic;
+                    font-weight:bold;
+                    color:beige;
+                }
+                #sidebar{
+                    background-color: aliceblue;
+                    width: 180px;
+                    padding: 10px;
+            
+                }
+                .marcer{
+                    float:left;
+                    margin:5px 5px 0 0;
+                }
+                #content{
+                    margin-bottom: 5px;
+                    width: 676px;
+                    width:676px;
+                    padding: 10px;
+                    background: #FFC0CB;
+                    border-radius: 5px;
+                    box-shadow: rgba(red, green, blue, alpha);
+                }
+
+                #menutext{
+  position:absolute;
+      left:500px;
+      font-size: 15px;
+      font-style: italic;
+      
 }
-#header{
-    position: relative;
-    height: 250px;
-    background-color: aqua;
-    margin-bottom: 5px;
+#text{
+  top:120px;
+  position:absolute;
+}
+#img{
+    margin: -25px 0px 0 0;
+    float: right;
+}
+ .sidebar {
+    background-color:#FFE4E1;
+    width: 250px;
+    float: left;
+    border-radius: 15px;
+    padding: 10px;
+ }             
+ .footer {
+    height: 80px;
+    background-color: beige;
+    margin-bottom: 10px;
     border-radius: 5px;
-    box-shadow: rgba(0,0,0,0,5) 0px 1px px;
-}
-    img{
-        float: left;
-        margin:0 0 10px 40px;
-        color:black;
-    }
-    h1{
-        margin: 0 0 10px 40px;
-        color: blue;
-    }
-    .nomer{
-        position:absolute;
-        top:5px;
-        left:1000px;
-        font-size: 15px;
-        font-style: italic;
-        font-weight:bold;
-        color:beige;
-    }
-    #sidebar{
-        background-color: aliceblue;
-        width: 180px;
-        padding: 10px;
+    box-shadow: rgba(0,0,0,0,5) 0px 1px 3px;
+ }
 
-    }
-    .marcer{
-        float:left;
-        margin:5px 5px 0 0;
-    }
-    #content{
-        margin-bottom: 5px;
-        width: 676px;
-        width:676px;
-        padding: 10px;
-        background: #FFC0CB;
-        border-radius: 5px;
-        box-shadow: rgba(red, green, blue, alpha);
-    }
-  
-   </style>
-
+            
+            </style>
+            
         </bady>
 </html>  
